@@ -68,7 +68,7 @@ const Footer = () => {
       <Container id="footer">
         <Profile>
           <Slide direction="left" delay={1}>
-            <h1>Contact Details</h1>
+            <h1 style={{color: "black"}}>Contact Details</h1>
           </Slide>
           {/* <div className="address">
           <Slide direction="left">
@@ -84,7 +84,7 @@ const Footer = () => {
             </Slide>
             <div>
               <span>
-                <FiPhoneCall />
+                <FiPhoneCall style={{color: "black"}} />
               </span>
               <Slide direction="left">
                 <a href="tel:+91-7061460536">+91-7061460536</a>
@@ -93,7 +93,7 @@ const Footer = () => {
             <div>
               <Slide direction="left">
                 <span>
-                  <HiOutlineMailOpen />
+                  <HiOutlineMailOpen style={{color: "black"}} />
                 </span>
               </Slide>
               <Slide>
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
           <div className="profiles">
             <Slide direction="left">
-              <h1>Check our profiles</h1>
+              <h1 style={{color: "black"}}>Check our profiles</h1>
             </Slide>
             <div className="icons">
               <Zoom>
@@ -132,7 +132,7 @@ const Footer = () => {
             </div>
           </div>
           <Fade >
-            <ArrowUp style={{ backgroundColor: "#6348fc" }} onClick={scrollUp} >
+            <ArrowUp style={{ backgroundColor: "black" }} onClick={scrollUp} >
               <AiOutlineArrowUp />
             </ArrowUp>
           </Fade>
@@ -168,7 +168,7 @@ const Footer = () => {
                 </span>
                 <textarea cols="30" name="message" rows="10" onChange={e => onhandleChange(e)} value={sendMailToUser.message} placeholder="Message..."></textarea>
               </div>
-              <button style={{ backgroundColor: "#6348fc", color: "white" }} onClick={sendMail}>Submit</button>
+              <button style={{ backgroundColor: "black", color: "white" }} onClick={sendMail}>Submit</button>
             </form>
           </Slide>
         </Form>
@@ -203,6 +203,7 @@ const Profile = styled.div`
     padding: 1rem 0;
     h1 {
       font-size: 1.2rem;
+      color: black;
     }
 
     p {
@@ -226,7 +227,7 @@ const Profile = styled.div`
       gap: 0.5rem;
       a {
         text-decoration: none;
-        color: lightgray;
+        color: black;
         :hover {
           color: orange;
         }
@@ -239,11 +240,13 @@ const Profile = styled.div`
       font-size: 1.2rem;
       padding: 1rem 0;
     }
-
+    :hover {
+      color: orange;
+    }
     .icons {
       display: flex;
       align-items: center;
-
+      
       span {
         display: flex;
         align-items: center;
@@ -253,23 +256,25 @@ const Profile = styled.div`
         height: 2rem;
         margin-right: 0.5rem;
         border-radius: 50px;
-
-        :hover {
-          background-color: #6348fc;
-        }
-
         a {
           margin-top: 0.2rem;
           color: #fff;
+          :hover {
+            color: orange
+          }
+        }
+        :hover {
+          filter: drop-shadow(0px 3px 6px #404040);
         }
       }
+      
     }
   }
 `;
 const ArrowUp = styled.div`
   width: 2rem;
   height: 2rem;
-  background-color: #01be96;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,11 +282,16 @@ const ArrowUp = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   margin-top: 2rem;
+  :hover {
+    filter: drop-shadow(0px 3px 6px #404040);
+    color: orange
+  }
   @media (max-width: 650px) {
     position: absolute;
     right: 3rem;
     top: 16rem;
   }
+ 
 `;
 const Form = styled.div`
   flex: 1;
@@ -291,7 +301,7 @@ const Form = styled.div`
   }
 
   form {
-    background-color: #191923;
+    background-color: #ECE8E8;
     padding: 0.8rem;
     border-radius: 5px;
     .name,
@@ -305,12 +315,12 @@ const Form = styled.div`
         width: 100%;
         border: none;
         outline: none;
-        color: #fff;
+        color: black;
         background-color: transparent;
         padding: 1rem 0.5rem;
       }
       span {
-        background-color: #3e3e3e;
+        background-color: black;
         width: 3rem;
         display: flex;
         align-items: center;
@@ -325,13 +335,17 @@ const Form = styled.div`
     button {
       width: 5rem;
       height: 1.8rem;
-      background-color: #01be96;
+      background-color: black;
       border: none;
       border-radius: 5px;
-      filter: drop-shadow(0px 4px 5px #01be9551);
       cursor: pointer;
       :hover {
-        filter: drop-shadow(0px 6px 9px #01be9551);
+        filter: drop-shadow(0px 3px 6px #404040);
+      }
+      a{
+        :hover{
+          color: orange;
+        }
       }
     }
   }

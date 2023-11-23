@@ -10,10 +10,10 @@ const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <h4>
-          Our <span className="blue">services</span>
+        <h4 style={{marginLeft: "40px"}}>
+          Our <span style={{color: "#ECE8E8"}}>services</span>
         </h4>
-        <h1>What we Provide</h1>
+        <h1 style={{marginLeft: "40px"}}>What we Provide</h1>
       </Slide>
       <Cards>
         <Slide direction="left">
@@ -37,6 +37,28 @@ const Services = () => {
             disc={`We specializes in website creation, transforming your vision into a captivating online presence. Our expert team combines design expertise and technical know-how to deliver customized websites that are visually stunning, user-friendly, and optimized for success.`}
           />
         </Slide>
+        <Slide direction="right">
+          <Card
+            Icon={CgWebsite}
+            title={"Mobile App Development"}
+            disc={`We specialize in crafting bespoke mobile app
+            solutions, addressing diverse business needs, from
+            intuitive consumer apps to robust enterprise
+            solutions. Our dedicated team collaborates closely
+            with clients to ensure timely delivery.`}
+          />
+        </Slide>
+        <Slide direction="right">
+          <Card
+            Icon={CgWebsite}
+            title={"Mobile App Development"}
+            disc={`We specialize in crafting bespoke mobile app
+            solutions, addressing diverse business needs, from
+            intuitive consumer apps to robust enterprise
+            solutions. Our dedicated team collaborates closely
+            with clients to ensure timely delivery.`}
+          />
+        </Slide>
       </Cards>
     </Container>
   );
@@ -45,8 +67,9 @@ const Services = () => {
 export default Services;
 
 const Container = styled.div`
-  width: 80%;
-  max-width: 1280px;
+  width: 100%;
+  background-color: black;
+  
   margin: 0 auto;
   padding: 3rem 0;
   @media (max-width: 840px) {
@@ -58,6 +81,8 @@ const Container = styled.div`
   }
 `;
 const Cards = styled.div`
+margin-left: 40px;
+margin-right: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;

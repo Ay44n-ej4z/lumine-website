@@ -29,13 +29,14 @@ const Header = () => {
 }
 
 export default Header
-
+// max-width: 1280px;
 const Container = styled.div`
     display: flex;
     align-items: center;
+    background-color:black;
     justify-content: space-between;
-    max-width: 1280px;
-    width: 80%;
+    
+    width: 100%;
     margin: 0 auto;
     padding: 1.5rem 0;
     position: relative;
@@ -86,6 +87,9 @@ const Container = styled.div`
 const Logo = styled.div`
     display: flex;
     align-items: center;
+
+    margin-left: 40px;
+  
     gap: 0.5rem;
     span{
         font-size: 1.8rem;
@@ -97,6 +101,7 @@ const Logo = styled.div`
     }
 `
 const Nav = styled.div`
+margin-right: 40px;
     @media(max-width:640px){
         position: fixed;
         display: flex;

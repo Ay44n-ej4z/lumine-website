@@ -16,18 +16,18 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left">
         <Texts>
-          <h1 className="blue" style={{margin: 40}}>
+          <h1 className="blue" style={{margin: 40, color:"black"}}>
             Hello 
           </h1>
-          <h2 style={{margin: 40}}>Enhance your online presence with us</h2>
+          <h2 style={{margin: 40, color:"black"}}>Enhance your online presence with us</h2>
           {/* <h3>UX/UI Designer and graphic designer</h3> */}
-          <p style={{margin: 40}}>
+          <p style={{margin: 40, color:"black"}}>
           Lumine is an innovative company specializing in digital design and branding. With their passion for creativity 
           and excellence, they bring ideas to life and design visually stunning websites and cohesive brand identities. 
           Step into the spotlight and let Lumine shine your digital dreams with their expertise and attention to detail.
           </p>
           <button style={{margin: 40}} onClick={scrollDown}>Let's talk</button>
-          <Social style={{margin: 40}}>
+          <Social style={{margin: 40, color:"black"}}>
             <p>Check out my</p>
             <div className="social-icons" >
               <span>
@@ -96,13 +96,13 @@ const Texts = styled.div`
     padding: 0.7rem 2rem;
     margin-top: 3rem;
     cursor: pointer;
-    background-color: #6348fc;
+    background-color:black;
     border: none;
     color: #fff;
     font-weight: 500;
-    filter: drop-shadow(0px 2px 2px #6c52fa);
     :hover {
-      filter: drop-shadow(0px 4px 4px #846efa);
+        color: orange;
+      filter: drop-shadow(0px 3px 6px #404040);
     }
   }
 `;
@@ -126,10 +126,11 @@ const Social = styled.div`
       width: 2.3rem;
       height: 2rem;
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #6348fc;
+      background-color: black;
       position: relative;
       transition: transform 400ms ease-in-out;
       :hover {
+      
         transform: rotate(360deg);
       }
     }
@@ -139,6 +140,9 @@ const Social = styled.div`
       position: absolute;
       top: 55%;
       left: 50%;
+      :hover{
+        color: orange;
+      }
       transform: translate(-50%, -50%);
     }
   }

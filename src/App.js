@@ -25,15 +25,18 @@ function App() {
 export default App;
 
 const Container = styled.div``;
+// linear-gradient(159deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+// linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 const Banner = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  background: white;
   height: 100vh;
   @media (max-width: 640px) {
     height: 100%;
     padding-bottom: 2rem;
   }
 `;
-
+// linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%)
 const LightColor = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+
+  background:white ;
 `;

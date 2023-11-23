@@ -22,9 +22,9 @@ body{
   position: relative;
 }
 
-.blue {
+/* .blue {
   color: #6348fc;
-}
+} */
 
 .slick-list, .slick-slider, .slick-track{
   padding: 1.5rem 0;
